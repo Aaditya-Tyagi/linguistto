@@ -1,0 +1,107 @@
+<div id="mainpage">
+    <div class="mainheading">
+          <h1> Online Signature Maker</h1>
+      </div>
+       <div class="container">   <div class="row  maindisplaybuttons">
+                  <div class="col-md-6 firstpagedivs">
+                      <img width="64" height="64" src="https://signaturely.com/wp-content/uploads/2020/04/type-your-signature-signaturely.svg" class="attachment-full size-full" alt="" loading="lazy">
+                      <h2>Type your signature</h2>
+                      <h5>So many choices.Type your name and choose the font that best matches your personalis</h5>
+                      <button id="typesignbtn" >Type Your Signature</button>
+                  </div>
+                  <div class="col-md-6 firstpagedivs">
+                      <img width="64" height="64" src="https://signaturely.com/wp-content/uploads/2020/04/draw-your-signature-signaturely.svg" class="attachment-full size-full" alt="" loading="lazy">
+                      <h3>Draw Your Sign.Use your mouse or trackpad to make statement</h3>
+                      <button id="drawsignbtn" > Draw your signature</button>
+                  </div>
+              </div>
+         
+  </div>
+  <div id="typesignaturecontainer" style="display: none;">
+          <p>Simply type yout name into the signature generator and see it coming alive in an eye-catching font!</p>
+            <p>Whether you like your typeface to be pretty or quirky, there's a style to match the true you.
+          </p>
+            <div class="download-wrapper mt-3">
+                <div class="row rowclass">
+                    <div class="col-7">
+                        <div class="d-flex align-items-center">
+                            <div class="select-format-title">image's format</div>
+                            <div class="download-format">
+                                <select name="image-format" id="image-format"><option value="png">png</option>
+                                    <option value="jpg">jpg</option>
+                                    <option value="jpeg">jpeg</option>
+                                    <option value="webp">webp</option>
+                                    <option value="gif">gif</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex align-items-center">
+                            <button id="downloadtype" style="background-color: #0566D1;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM382.6 302.6l-103.1 103.1C270.7 414.6 260.9 416 256 416c-4.881 0-14.65-1.391-22.65-9.398L129.4 302.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 306.8V128c0-17.69 14.33-32 32-32s32 14.31 32 32v178.8l49.38-49.38c12.5-12.5 32.75-12.5 45.25 0S395.1 290.1 382.6 302.6z"></path>
+                                </svg>Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="input"><input type="text" name="inputname" id="input" placeholder="Type Your Name Here"></div>
+          <div class="col-md-12 output ">
+              <div class="resultcanvas">
+              </div>
+              <div id="filters" class="filters">
+                      <div class="firstrowfilter" id="firstrowfilter">
+                          <div class="dropdown" id="fontselect">
+                              <p>FontFace</p>
+                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li id="Open Sans" data-path="img/signaturegenerator/Opensans.png" data-url="./OpenSans-LightItalic.ttf" data-toggle="Open Sans,sans-serif" class="dropdown-item fonts-dropdown"> <img src="/img/signaturegenerator/Opensans.png" alt="Opensans"></li>
+                                <li id="Roboto Mono" class="dropdown-item fonts-dropdown"  data-url=""  data-toggle="Roboto Mono,monospace" data-path="img/signaturegenerator/Roboto.png"><img src="img/signaturegenerator/Roboto.png" alt="Roboto"></li>
+                                <li id="Amatic SC" class="dropdown-item fonts-dropdown"  data-toggle="Amatic SC" data-path="img/signaturegenerator/amatic.png"><img src="img/signaturegenerator/amatic.png" alt="Amatic SC"></li>
+                                <li id="Comforta" class="dropdown-item fonts-dropdown"  data-toggle="Comfortaa" data-path="img/signaturegenerator/comforta.png"><img src="img/signaturegenerator/comforta.png" alt="Comfortaa"></li>
+                                <li id="Cormorant" class="dropdown-item fonts-dropdown"  data-toggle="Cormorant SC" data-path="img/signaturegenerator/cormorant.png"><img src="img/signaturegenerator/cormorant.png" alt="Cormorant"></li>
+                                <li id="Dancing Script" class="dropdown-item fonts-dropdown"  data-toggle="Dancing Script" data-path="img/signaturegenerator/dancing.png"><img src="img/signaturegenerator/dancing.png" alt="Dancing Script"></li>
+                                <li id="EDUfoundation" class="dropdown-item fonts-dropdown"  data-toggle="Edu NSW ACT Foundation" data-path="img/signaturegenerator/foundation.png"><img src="img/signaturegenerator/foundation.png" alt="EDU FOUNDATION"></li>
+                                <li id="Square Peg" class="dropdown-item fonts-dropdown"  data-toggle="Square Peg" data-path="img/signaturegenerator/square.png"><img src="img/signaturegenerator/square.png" alt="Square Peg"></li>
+                                <li id="poppins" class="dropdown-item fonts-dropdown"  data-toggle="Poppins" data-path="img/signaturegenerator/poppins.png"><img src="img/signaturegenerator/poppins.png" alt="Poppins"></li>
+                                <li id="Indie Flower" class="dropdown-item fonts-dropdown"  data-toggle="Indie Flower" data-path="img/signaturegenerator/indie.png"><img src="img/signaturegenerator/indie.png" alt="Indie Flower"></li>
+                              </div>
+                          </div>
+                          <div class="size-selecr">
+                              <p>Font Size</p>
+                              <button id="font-decrease">-</button>
+                              <input type="number" id="fontsize" value="42"  min="4" max="108" >
+                              <button id="font-increase">+</button>
+
+                          </div>
+                      </div>
+                      <div id="fontandbgcolor">
+                          <div id="fontcolordiv">
+                              <p>Text-Color</p>
+                              <input type="color" id="fontcolor" value="#000000">
+                          </div>
+                          <div id="bgcolordiv">
+                              <p>Background</p>
+                              <input type="color" id="bgcolor" value="#ffffFF">
+                          </div>
+                      </div>
+                  
+                      <p>Slope</p>
+                      <input type="range" class="slider" max="180" min="-180" value="0" step="1" id="Slope">
+                      <!-- <button id="downloadtype">Download</button> -->
+              </div>
+          </div>
+  </div>
+  <div id="drawsignaturecontainer"  style="display: none">
+      <h1>Draw Your signature</h1>
+      <canvas id="myPics" width="560" height="360"></canvas>
+      <div class="signfilters">
+       <input type="color" id="signcolor">
+       Width
+       <input type="range" id="drawwidth" min="1" max="9"  >
+       Angle
+       <!-- <input type="range" id="drawangle" min="-180" value="0" max="180" > -->
+       <button id="drawreset">Reset Canvas</button>
+      </div>
+      <button id="downloaddraw">Download</button>
+  </div>

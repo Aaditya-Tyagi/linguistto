@@ -134,6 +134,12 @@
       "description": "Free online lorem ipsum generator",
       "color": "#33cccc",
       "icon": "/img/typing.svg"
+    },{
+      "name":"Signature generator",
+      "url":"/signature-generator",
+      "description":"Free online signature generator",
+      "color":"#a7a7cd",
+      "icon":"/img/typing.svg"
     }
   ]
 }
